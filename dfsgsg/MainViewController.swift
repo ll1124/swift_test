@@ -30,9 +30,20 @@ class MainViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        print("MainViewController's view did appear")
+        print("MainViewController's view did appear\n")
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        
+        print("MainViewController's view will disappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        
+        print("MainViewController's view did disappear")
+    }
 
     /*
     // MARK: - Navigation
